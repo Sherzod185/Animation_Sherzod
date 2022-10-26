@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 1200px;
+  height: 70vh;
+  width: 70vh;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#left-wheel{
+animation: wheel 0.5s infinite linear;
+transform-origin: center;
+transform-box: fill-box;
+}
+#main-box{
+  animation: main-box 0.5s infinite ease-in-out alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
+}
+#head{
+  animation: head 0.5s infinite ease-in-out alternate;
+  transform-origin: center;
+transform-box: fill-box;
+}
+
+#samalyot{
+  animation: samalyot 8s  infinite linear ;
+  margin-top: 200px
+}
+
+#shahar{
+  animation: shahar 8s  infinite linear ;
+}
+#shahar2{
+  animation: shahar 5s  infinite linear ;
+}
+@keyframes wheel{
+from{
+transform: rotateZ(0deg);
+}
+to{
+  transform: rotateZ(360deg);
+}
+}
+
+@keyframes head {
+  from{
+transform: translateY(0) rotateX(0deg) ;
+  }
+  to{
+    transform: translateY(27%) rotateX(20deg);
+  }
+}
+
+@keyframes main-box{
+  from{
+transform: rotateX(0) ;
+  }
+  to{
+    transform: rotateX(20deg);
+  }
+}
+@keyframes samalyot{
+  from{
+  transform: translateX(0) translateY(-120%);
+  }
+  to{
+    transform: translateY(100%)  ;
+  }
+}
+@keyframes shahar{
+  from{
+    transform: translateX(100%) ;
+    }
+    to{
+      transform: translateX(-100%)  ;
+    }
+}
+@keyframes shahar2{
+  from{
+    transform: translateX(100%) ;
+    }
+    to{
+      transform: translateX(-100%)  ;
+    }
+}
